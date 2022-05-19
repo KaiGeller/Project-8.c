@@ -4,13 +4,13 @@
 #This code will make a dictionary with the employees name, id, salary, and email
 class Employee:
     _name=""
-    _ids=""
+    _ID_number=""
     _sals=0
     _emails=""
     def __init__(self,emp_names,emp_ids,emp_sals,emp_emails):
         """This will create an employee object"""
         self._name = emp_names
-        self._ids = emp_ids
+        self._ID_number = emp_ids
         self._sals = emp_sals
         self._emails = emp_emails
     def get_name(self):
@@ -18,7 +18,7 @@ class Employee:
         return self._name
     def get_ID_number(self):
         """This will return the employee ID number"""
-        return self._ids
+        return self._ID_number
     def get_salary(self):
         """This will return the employee salary"""
         return self._sals
