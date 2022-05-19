@@ -24,5 +24,6 @@ class Employee:
 def make_employee_dict(names,ids,sals,emails):
     """This will make a dictionary with the employees information"""
     employee_dict={}
-    for i in len(names):
+    for i in range(len(names)):
         employee_dict[ids[i]]=Employee(names[i],ids[i],sals[i],emails[i])
+    return employee_dict
