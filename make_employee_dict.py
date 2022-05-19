@@ -5,13 +5,13 @@
 class Employee:
     def __init__(self,emp_names,emp_ids,emp_sals,emp_emails):
         """This will create an employee object"""
-        self.name = emp_names
+        self._name = emp_names
         self.ids = emp_ids
         self.sals = emp_sals
         self.emails = emp_emails
     def get_name(self):
         """This will return the employee name"""
-        return self.name
+        return self._name
     def get_ID_number(self):
         """This will return the employee ID number"""
         return self.ids
