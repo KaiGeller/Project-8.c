@@ -6,13 +6,13 @@ class Employee:
     _name=""
     _ID_number=""
     _salary=0
-    _emails=""
+    _email_address=""
     def __init__(self,emp_names,emp_ids,emp_sals,emp_emails):
         """This will create an employee object"""
         self._name = emp_names
         self._ID_number = emp_ids
         self._salary = emp_sals
-        self._emails = emp_emails
+        self._email_address = emp_emails
     def get_name(self):
         """This will return the employee name"""
         return self._name
@@ -24,7 +24,7 @@ class Employee:
         return self._salary
     def get_email_address(self):
         """This will return the employee email address"""
-        return self._emails
+        return self._email_address
 def make_employee_dict(names,ids,sals,emails):
     """This will make a dictionary with the employees information"""
     employee_dict={}
