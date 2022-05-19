@@ -3,6 +3,10 @@
 #5/17/2022
 #This code will make a dictionary with the employees name, id, salary, and email
 class Employee:
+    __name=""
+    __ids=""
+    __sals=0
+    __emails=""
     def __init__(self,emp_names,emp_ids,emp_sals,emp_emails):
         """This will create an employee object"""
         self.__name = emp_names
